@@ -214,7 +214,7 @@ export default function WorkspaceContent() {
         </HStack>
 
         {/* Collapsible content */}
-        {isOpen && <StickyTable />}
+        {isOpen && <StickyTable isOpen={isOpen} key={`table-${isOpen}`} />}
       </VStack>
     </VStack>
   );

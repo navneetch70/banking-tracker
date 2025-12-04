@@ -149,7 +149,7 @@ const statusColumnToLabelColor: Record<RowItem["status"], any> = {
 
 const allStatuses: RowItem["status"][] = ["Working on it", "Done", "Stuck"];
 
-export default function StickyTable() {
+export default function StickyTable({ isOpen }: { isOpen?: boolean }) {
   const [rows, setRows] = useState<RowItem[]>(initialTableData);
 
   const handleChangeStatus = (rowId: number, newStatus: RowItem["status"]) => {
@@ -193,6 +193,7 @@ export default function StickyTable() {
             {/* STATUS CELL WITH TOOLTIP */}
             <TableCell className="tooltip-table-cell">
               <Tooltip
+                key={`tooltip-${rowItem.id}-${isOpen}`}
                 content={
                   <div
                     style={{
