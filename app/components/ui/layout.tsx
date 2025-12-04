@@ -21,6 +21,7 @@ export default function Layout({ children }: { children: ReactNode }) {
           padding: "24px 32px",
           backgroundColor: "#181c34",
           overflowY: "auto",
+          position: "relative",
         }}
       >
         {children}

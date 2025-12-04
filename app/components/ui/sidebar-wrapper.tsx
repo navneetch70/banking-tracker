@@ -17,7 +17,7 @@ export default function SidebarWrapper({
       height="100vh"
       style={{
         zIndex: 1000,
-        position: "absolute",
+        position: "fixed",
         right: 0,
         top: 0,
       }}
