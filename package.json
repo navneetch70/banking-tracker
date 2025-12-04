@@ -9,9 +9,12 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@vibe/core": "^3.78.0",
+    "@vibe/icons": "^1.11.2",
     "next": "16.0.4",
     "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react-dom": "19.2.0",
+    "styled-components": "^6.1.19"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
